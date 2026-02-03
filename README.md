@@ -1,6 +1,6 @@
 # Bitcoin Price Prediction: LSTM vs LR
 
-A machine learning pipeline comparing LSTM (Long Short-Term Memory) neural networks with Linear Regression for predicting Bitcoin market movements.
+A machine learning pipeline comparing LSTM (Long Short-Term Memory) neural networks with Linear Regression as a baseline model.
 
 Result - **LSTM outperforms Linear Regression by 86.3%** on unseen test data.
 
@@ -33,18 +33,6 @@ pip install -r requirements.txt
 # Run the notebook
 jupyter notebook bitcoin_ml_pipeline.ipynb
 ```
-
-## Models Compared
-
-### Linear Regression
-- Simple, interpretable baseline model
-- Equation: Y = θ₂X + θ₁
-- Assumes linear relationship between time and price
-
-### LSTM (Long Short-Term Memory)
-- Deep learning model designed for sequential data
-- Captures long-term dependencies through gating mechanisms
-- Uses 60-day lookback window for predictions
 
 ## Tech Stack
 
