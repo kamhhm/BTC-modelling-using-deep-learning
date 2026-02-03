@@ -1,31 +1,8 @@
-# Bitcoin Price Prediction: LSTM vs Linear Regression
+# Bitcoin Price Prediction: LSTM vs LR
 
 A machine learning pipeline comparing LSTM (Long Short-Term Memory) neural networks with Linear Regression for predicting Bitcoin market movements.
 
-## Research Question
-
-> Is the LSTM machine learning algorithm more effective than linear regression in predicting bitcoin market movements?
-
-## Results
-
-**LSTM outperforms Linear Regression by 86.3%** on unseen test data.
-
-| Metric | Linear Regression | LSTM |
-|--------|-------------------|------|
-| Average Error | $23,765 | $3,257 |
-| MSE | 583.97 | 15.02 |
-| R-squared | -43.72 | -0.22 |
-
-*All metrics evaluated on held-out test data only (proper ML evaluation).*
-
-## ML Best Practices
-
-This project follows fundamental machine learning principles:
-
-- **70/15/15 Train/Validation/Test Split**: Ensures unbiased evaluation
-- **No Data Leakage**: Test set is never seen during training or validation
-- **Temporal Ordering Preserved**: Critical for time-series forecasting
-- **Separate Validation Set**: Used for hyperparameter tuning during LSTM training
+Result - **LSTM outperforms Linear Regression by 86.3%** on unseen test data.
 
 ## Project Structure
 
@@ -68,13 +45,6 @@ jupyter notebook bitcoin_ml_pipeline.ipynb
 - Deep learning model designed for sequential data
 - Captures long-term dependencies through gating mechanisms
 - Uses 60-day lookback window for predictions
-
-## Dataset
-
-565 days of Bitcoin prices from **November 2020 to May 2022**, covering:
-- Bitcoin's rise to ~$60,000
-- Significant market volatility
-- Major corrections and recoveries
 
 ## Tech Stack
 
